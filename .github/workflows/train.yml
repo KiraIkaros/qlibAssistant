@@ -19,6 +19,8 @@ on:
 jobs:
   check-home-access:
     runs-on: ubuntu-latest
+    env:
+      MLFLOW_ALLOW_FILE_STORE: true
     steps:
       - name: 1. 下载最新qlib_bin.tar.gz
         env:
