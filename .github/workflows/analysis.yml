@@ -11,7 +11,7 @@ on:
 
 env:
   DOLT_TOKEN: ${{ secrets.DOLT_TOKEN }}
-
+  MLFLOW_ALLOW_FILE_STORE: true
 jobs:
   check-home-access:
     runs-on: ubuntu-latest
